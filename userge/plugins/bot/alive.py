@@ -290,11 +290,12 @@ class Bot_Alive:
   🐍   <b>Python      :</b>    <code>v{versions.__python_version__}</code>
   🔥   <b>Pyrogram :</b>    <code>v{versions.__pyro_version__}</code>
   🧬   <b>𝑿                :</b>    <code>v{get_version()}</code>
+       <b>Host          : os.environ.get("HOST_INFO")
   👤   <b>User          :</b>    <code>{u_name}</code>
   <b>{Bot_Alive._get_mode()}</b>        <code>|</code>    🕔  <b>{userge.uptime}</b>
 """
         return alive_info
-
+Host: os.environ.get("HOST_INFO")
     @staticmethod
     def _get_mode() -> str:
         if RawClient.DUAL_MODE:
